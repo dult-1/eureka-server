@@ -16,7 +16,7 @@ import java.util.concurrent.Semaphore;
  */
 public class Test {
     public static final Semaphore SEMAPHORE = new Semaphore(3);
-    //    public static InheritableThreadLocal<Integer> threadLocal = new InheritableThreadLocal<>();
+    public static InheritableThreadLocal<Integer> threadLocal = new InheritableThreadLocal<>();
     public static ExecutorService service = Executors.newFixedThreadPool(5);
     public static volatile int num=0;
     public static void main(String[] args) {
